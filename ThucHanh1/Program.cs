@@ -103,9 +103,39 @@ namespace ThucHanh1
             Array.Reverse(arr);
         }
 
+        //phân tích thừa số nguyên tố
+        public static void PrimeFactorization(int number)
+        {
+            for(int i = 2; i <= Math.Sqrt(number); i++)
+            {
+                while(number % i == 0)
+                {
+                    Console.Write(i + " ");
+                    number /= i;
+                }
+            }
+            if(number != 1)
+            {
+                Console.Write(number);
+            }
+        }
+
+        //UCLN
+        public static int GCD(int a, int b)
+        {
+            if (b == 0) return a;
+            return GCD(b, a % b);
+        }
+
+        //BCNN
+        public static int LCM(int a, int b)
+        {
+            return (a * b) / GCD(a, b);
+        }
+
         static void Main(string[] args)
         {
-            int n;
+            /*int n;
             Console.Write("Nhập số phần tử của mảng: ");
             while (!int.TryParse(Console.ReadLine(), out n) || n <= 0)
             {
@@ -116,7 +146,8 @@ namespace ThucHanh1
             int[] arr = new int[n];
             InputArray(arr);
             SortArrayDesc(arr);
-            OutputArray(arr);
+            OutputArray(arr);*/
+            Console.WriteLine(LCM(12, 18));
             Console.ReadKey();
         }   
     }
