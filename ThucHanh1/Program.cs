@@ -103,21 +103,40 @@ namespace ThucHanh1
             Array.Reverse(arr);
         }
 
-        //phân tích thừa số nguyên tố
-        public static void PrimeFactorization(int number)
+        //bài 9
+        public static int FirstIndex(int[] arr, int x)
         {
+            for (int i = 0; i < arr.Length; i++)
+                if (arr[i] == x)
+                    return i;
+            return -1; 
+        }
+
+        public static int LastIndex(int[] arr, int x)
+        {
+            for(int i = arr.Length - 1; i >= 0; i--)
+                if(arr[i] == x) 
+                    return i;            
+            return -1;
+        }
+
+        //phân tích thừa số nguyên tố
+        public static List<int> PrimeFactorization(int number)
+        {
+            List<int> result = new List<int>();
             for(int i = 2; i <= Math.Sqrt(number); i++)
             {
                 while(number % i == 0)
                 {
-                    Console.Write(i + " ");
+                    result.Add(i);
                     number /= i;
                 }
             }
             if(number != 1)
             {
-                Console.Write(number);
+                result.Add(number);
             }
+            return result;
         }
 
         //UCLN
@@ -133,21 +152,70 @@ namespace ThucHanh1
             return (a * b) / GCD(a, b);
         }
 
-        static void Main(string[] args)
+        //Đổi chổ 2 số
+        public static void SwapTwoNumber(ref int numberOne, ref int numberTwo)
         {
-            /*int n;
-            Console.Write("Nhập số phần tử của mảng: ");
-            while (!int.TryParse(Console.ReadLine(), out n) || n <= 0)
+            int temp = numberOne;
+            numberOne = numberTwo;
+            numberTwo = temp;
+        }
+
+        //Đổi năm dương lịch sang năm âm lịch
+        public static string LunarYear(int year)
+        {
+            string[] can = { "Canh", "Tân", "Nhâm", "Quý", "Giáp", "Ất", "Bính", "Đinh", "Mậu", "Kỷ" };
+            string[] chi = { "Thìn", "Tỵ", "Ngọ", "Mùi", "Thân", "Dậu", "Tuất", "Hợi", "Tý", "Sửu", "Dần", "Mèo" };
+            return $"{can[year % 10]} {chi[year % 12]}";
+        }
+
+        //PT Bật nhất
+        /// <summary>
+        ///  1 có nghiệm -1 vô số nghiệm 0 vô nghiệm  
+        /// </summary>
+        public static int PTBat1(float a, float b, out float x)
+        {
+            x = 0;
+            if (a == 0)
             {
-                Console.WriteLine("Vui lòng nhập một số nguyên dương.");
-                Console.Write("Nhập số phần tử của mảng: ");
+                if (b == 0)
+                    return -1;
+                return 0;
+            }
+            else
+            {
+                x = -b / a;
+                return 1;
             }
 
-            int[] arr = new int[n];
-            InputArray(arr);
-            SortArrayDesc(arr);
-            OutputArray(arr);*/
-            Console.WriteLine(LCM(12, 18));
+        }
+
+        //PT Bật 2
+        /// <summary>
+        /// true có nghiệm false vô nghiệm
+        /// </summary>
+        public static bool PTBat2(float a, float b, float c, out float x1, out float x2)
+        {
+            x1 = x2 = 0;
+            float delta = b * b - (4 * a * c);
+            if (delta < 0)
+                return false;
+            else if(delta == 0)
+            {
+                x1 = x2 = -b / (2 * a);
+                return true;
+            }
+            else
+            {
+                x1 =(float) (-b + Math.Sqrt(delta)) / (2 * a);
+                x2 =(float) (-b - Math.Sqrt(delta)) / (2 * a);
+                return true;
+            }
+        }
+
+        static void Main(string[] args)
+        {            
+            Console.WriteLine(LunarYear(2020));
+            
             Console.ReadKey();
         }   
     }
