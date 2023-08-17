@@ -267,7 +267,7 @@ namespace ThucHanh1
 
         static void Main(string[] args)
         {            
-            Console.WriteLine(DecimalToHex(123456));
+            Console.WriteLine(Buoi3.HexToDecimal("5A"));
             
             Console.ReadKey();
         }   
