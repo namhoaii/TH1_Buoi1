@@ -5,3 +5,10 @@ E:\CShaf.NET\TH1\ThucHanh1\obj\Debug\ThucHanh1.csproj.AssemblyReference.cache
 E:\CShaf.NET\TH1\ThucHanh1\obj\Debug\ThucHanh1.csproj.CoreCompileInputs.cache
 E:\CShaf.NET\TH1\ThucHanh1\obj\Debug\ThucHanh1.exe
 E:\CShaf.NET\TH1\ThucHanh1\obj\Debug\ThucHanh1.pdb
+E:\CSharp.NET\TH1\ThucHanh1\bin\Debug\ThucHanh1.exe.config
+E:\CSharp.NET\TH1\ThucHanh1\bin\Debug\ThucHanh1.exe
+E:\CSharp.NET\TH1\ThucHanh1\bin\Debug\ThucHanh1.pdb
+E:\CSharp.NET\TH1\ThucHanh1\obj\Debug\ThucHanh1.csproj.AssemblyReference.cache
+E:\CSharp.NET\TH1\ThucHanh1\obj\Debug\ThucHanh1.csproj.CoreCompileInputs.cache
+E:\CSharp.NET\TH1\ThucHanh1\obj\Debug\ThucHanh1.exe
+E:\CSharp.NET\TH1\ThucHanh1\obj\Debug\ThucHanh1.pdb

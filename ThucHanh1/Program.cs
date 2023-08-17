@@ -212,9 +212,62 @@ namespace ThucHanh1
             }
         }
 
+        public static long DecimalToBinary(int n)
+        {
+            long binary = 0;
+            int p = 0;
+            while(n > 0)
+            {
+                binary += (n % 2) * (long)Math.Pow(10, p);
+                ++p;
+                n /= 2;
+            }
+            return binary;
+        }
+
+        public static int BinaryToDecimal(long n)
+        {
+            int dec = 0;
+            int p = 0;
+            while(n > 0)
+            {
+                dec += (int)(n % 10) * (int)Math.Pow(2, p);
+                ++p;
+                n /= 10;
+            }
+            return dec;
+        }
+
+        public static int DecimalToOctal(int n)
+        {
+            int ocl = 0;
+            int p = 0;
+            while(n > 0)
+            {
+                ocl += (n % 8) * (int)Math.Pow(10, p);
+                ++p;
+                n /= 8;
+            }
+            return ocl;
+        }
+
+        public static string DecimalToHex(int n)
+        {
+            if (n == 0) return "0";
+            string hex = "";
+            while(n > 0)
+            {
+                int temp = n % 16;
+                hex = ((temp < 10) ? temp.ToString() : ((char)(temp - 10 + 'A')).ToString()) + hex;
+                n /= 16;
+            }
+  
+            return hex;
+        }
+
         static void Main(string[] args)
         {            
-            Console.WriteLine(LunarYear(2020));
+            Console.WriteLine(DecimalToHex(123456));
             
             Console.ReadKey();
         }   
