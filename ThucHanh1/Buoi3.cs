@@ -21,6 +21,13 @@ namespace ThucHanh1
             return (a * b) / GCD(a, b);
         }
 
+        //Bài 3: Tìm GCD LCM
+        public static void GCDAndLCM(int a, int b, out int gcd, out int lcm)
+        {
+            gcd = GCD(a, b);
+            lcm = LCM(a, b);
+        }
+
         //Bài 4: Thập phân sang nhị phân
         public static long DecimalToBinary(int n)
         {
@@ -116,7 +123,7 @@ namespace ThucHanh1
             int power = 0;
             for(int i = n.Length - 1; i >= 0; i--)
             {
-                int temp = 0;
+                int temp;
                 if(n[i] >= 48 && n[i] <= 57)
                 {
                     temp = (int)n[i] - 48;
@@ -129,10 +136,7 @@ namespace ThucHanh1
                 result += temp;
                 ++power;
             }
-
             return result;
         }
-
-
     }
 }
