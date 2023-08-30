@@ -12,3 +12,16 @@ E:\CSharp.NET\TH1\ThucHanh1\obj\Debug\ThucHanh1.csproj.AssemblyReference.cache
 E:\CSharp.NET\TH1\ThucHanh1\obj\Debug\ThucHanh1.csproj.CoreCompileInputs.cache
 E:\CSharp.NET\TH1\ThucHanh1\obj\Debug\ThucHanh1.exe
 E:\CSharp.NET\TH1\ThucHanh1\obj\Debug\ThucHanh1.pdb
+E:\CSharp.NET\TH1\ThucHanh1\bin\Debug\DevExpress.Data.v20.1.dll
+E:\CSharp.NET\TH1\ThucHanh1\bin\Debug\DevExpress.Xpo.v20.1.dll
+E:\CSharp.NET\TH1\ThucHanh1\bin\Debug\DevExpress.Data.v20.1.xml
+E:\CSharp.NET\TH1\ThucHanh1\bin\Debug\DevExpress.Xpo.v20.1.xml
+E:\CSharp.NET\TH1\ThucHanh1\bin\Debug\de\DevExpress.Data.v20.1.resources.dll
+E:\CSharp.NET\TH1\ThucHanh1\bin\Debug\es\DevExpress.Data.v20.1.resources.dll
+E:\CSharp.NET\TH1\ThucHanh1\bin\Debug\ja\DevExpress.Data.v20.1.resources.dll
+E:\CSharp.NET\TH1\ThucHanh1\bin\Debug\ru\DevExpress.Data.v20.1.resources.dll
+E:\CSharp.NET\TH1\ThucHanh1\bin\Debug\de\DevExpress.Xpo.v20.1.resources.dll
+E:\CSharp.NET\TH1\ThucHanh1\bin\Debug\es\DevExpress.Xpo.v20.1.resources.dll
+E:\CSharp.NET\TH1\ThucHanh1\bin\Debug\ja\DevExpress.Xpo.v20.1.resources.dll
+E:\CSharp.NET\TH1\ThucHanh1\bin\Debug\ru\DevExpress.Xpo.v20.1.resources.dll
+E:\CSharp.NET\TH1\ThucHanh1\obj\Debug\ThucHanh1.csproj.CopyComplete

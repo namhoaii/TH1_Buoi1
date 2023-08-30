@@ -267,9 +267,7 @@ namespace ThucHanh1
 
         static void Main(string[] args)
         {
-            Buoi3.GCDAndLCM(6, 20,out int a,out int b);
-            Console.WriteLine($"GCD = {a} LCM = {b}");
-            
+            Console.Write(Buoi5.DemSoTu("        truong   cao dang              cong   dong dong thap              "));
             Console.ReadKey();
         }   
     }
